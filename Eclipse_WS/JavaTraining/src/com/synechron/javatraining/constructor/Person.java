@@ -2,10 +2,10 @@ package com.synechron.javatraining.constructor;
 
 public class Person {
 
-	String name;
-	int age;
-	double weight;
-	double height;
+	public String name;
+	public int age;
+	public double  weight;
+	public double height;
 	
 	public Person() {
 
@@ -28,19 +28,17 @@ public class Person {
 		Person p2 = new Person("Harish", 39, 85, 5); 
 		Person p5 = new Person("Girish", 40, 78, 5); 
 		
-		printPerson(p1);
-		printPerson(p2);
-		printPerson(p3);
-		printPerson(p5);
+		p1.printAllDetails();
+		p2.printAllDetails();
 	}
 	
-	public static void printPerson(Person p)
+	public void printAllDetails()
 	{
 		System.out.println("--- Printing Person Values ----");
-		System.out.println(p.name);
-		System.out.println(p.age);
-		System.out.println(p.weight);
-		System.out.println(p.height);
+		System.out.println(this.name);
+		System.out.println(this.age);
+		System.out.println(this.weight);
+		System.out.println(this.height);
 		System.out.println("--- ------------ ----");
 		
 	}
