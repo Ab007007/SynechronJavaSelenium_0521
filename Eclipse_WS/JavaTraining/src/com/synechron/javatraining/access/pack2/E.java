@@ -10,7 +10,7 @@ public class E extends A {
 		
 		a.printProtectedMember();
 		a.printPublicMember();
-		
+		//a.allVariables();
 		
 	}
 }
