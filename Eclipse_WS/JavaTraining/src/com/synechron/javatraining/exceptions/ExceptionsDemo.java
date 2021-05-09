@@ -13,11 +13,16 @@ public class ExceptionsDemo {
 			int arr[] = {12,23,34,45,56,6,7};
 			System.out.println("Element at index 0 ->" + arr[arr.length-1]);
 		}
+
 		catch(ArithmeticException ex ) {
 			System.out.println("Dont divide the number by 0");
 		}
 		catch (ArrayIndexOutOfBoundsException ex) {
 			System.out.println("Check the index of an array");
+		}
+		catch(Exception ex)
+		{
+			System.out.println("Generic Exception");
 		}
 		finally {
 			System.out.println("Always!!!!!");
