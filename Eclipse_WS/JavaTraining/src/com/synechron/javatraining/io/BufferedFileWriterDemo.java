@@ -15,6 +15,12 @@ public class BufferedFileWriterDemo {
 		FileWriter fw = null;
 		BufferedWriter bw = null;
 		int num =15;
+		writeTablesToFile(fw, bw, num);
+
+	}
+
+	private static void writeTablesToFile(FileWriter fw, BufferedWriter bw, int num) {
+		File file;
 		try {
 			file = new File("D:\\SynechronJavaSelenium_07_05\\temp.txt");
 			fw = new FileWriter(file, true);
@@ -29,6 +35,7 @@ public class BufferedFileWriterDemo {
 			System.out.println("Complete");
 		} catch (FileNotFoundException e) {
 			System.out.println("Exception while reading file");
+			e.printStackTrace();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -42,7 +49,6 @@ public class BufferedFileWriterDemo {
 				e.printStackTrace();
 			}
 		}
-
 	}
 
 }

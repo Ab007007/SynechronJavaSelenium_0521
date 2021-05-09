@@ -7,6 +7,16 @@ public class Person {
 	public double  weight;
 	public double height;
 	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		String str = "Person name : " + this.name + "\nPerson Age : " + this.age + "\nPerson Height :" + this.height
+				
+				+ "\nPerson Weight : " + this.weight + "\n-------------------------------------------";
+		
+		return str;
+	}
+	
 	public Person() {
 
 		System.out.println("--constructor is called ---");
