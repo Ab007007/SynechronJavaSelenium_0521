@@ -30,7 +30,7 @@ public class MultiSelectDropDown {
 		Thread.sleep(3000);
 		sel.deselectByValue("mercedes");
 		Thread.sleep(3000);
-		sel.selectByVisibleText("Audi");
+		sel.deselectByVisibleText("Audi");
 		Thread.sleep(3000);
 		
 		sel.selectByIndex(3);
