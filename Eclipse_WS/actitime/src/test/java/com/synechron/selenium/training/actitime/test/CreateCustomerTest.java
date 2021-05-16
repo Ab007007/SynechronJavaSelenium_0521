@@ -20,7 +20,6 @@ public class CreateCustomerTest {
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			driver.manage().window().maximize();
 			
-			
 			driver.get("http://localhost/login.do");
 			driver.findElement(By.id("username")).sendKeys("admin");
 			driver.findElement(By.name("pwd")).sendKeys("manager");
