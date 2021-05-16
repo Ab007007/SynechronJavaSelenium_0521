@@ -49,5 +49,11 @@ public class MouseMovementOperationsDemo {
 		act.moveToElement(home).perform();
 		Thread.sleep(2000);
 		
+		
+		//act.doubleClick()
+		//act.clickAndHold()
+		//act.release()
+		//act.contextClick()
+		
 	}
 }
