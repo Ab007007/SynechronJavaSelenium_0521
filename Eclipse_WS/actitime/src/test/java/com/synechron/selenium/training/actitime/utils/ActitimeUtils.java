@@ -9,7 +9,7 @@ public class ActitimeUtils extends DriverUtils {
 
 	public static void launch(String url) {
 		System.out.println("launching the applcation " + url);
-		driver.get("http://localhost/login.do");
+		driver.get(url);
 	}
 
 	public static void login(String un, String pw) {

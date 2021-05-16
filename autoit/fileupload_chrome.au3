@@ -1,0 +1,5 @@
+WinWaitActive("Open")
+Sleep(2000)
+ControlSetText("Open","","Edit1","D:\SynechronJavaSelenium_07_05\Eclipse_WS\Actitime-POC.side")
+Sleep(2000)
+ControlClick("Open","&Open","Button1")
